@@ -1,0 +1,47 @@
+html{
+    background: #614385;
+    background: -webkit-radial-gradient(#614385 , #516395);
+    background: radial-gradient(#614385 , #516395);
+    font-family: 'Roboto', sans-serif;
+    min-height:100%;    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{background:#fff; max-width:500px; padding:20px;}
+
+h1{font-size:32px; text-align:center; text-transform:uppercase; color:#614385;font-weight:normal; letter-spacing:-1px;}
+p{color:#151F1F; text-align:center;}
+
+/* tag, class e id. Onde Tag "input, h1, p". Class ".real". ID "#valorConvertido" */
+
+.loading {
+  position: absolute;
+  top: 500px;
+  left: 1240px;
+}
+input[type="number"]{padding:5px; border-radius:3px; border:1px solid #999; width:90%; margin-bottom:10px; font-size:16px;}
+input[type="number"]:focus{border-color:#151F1F;}
+
+.moedaSaida{width:70%; margin:0 auto;}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.page-logo {
+  width: 200px;
+}
+.imgLogo{
+  margin-bottom: 50px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.convertButton{text-align:center; margin:10px auto 0; text-transform:uppercase; color:white; background-color:#614385; border:1px solid #614385; border-radius:3px; padding:5px 20px; cursor:pointer; transition: 0.3s background ease-in; display:block;}
+.convertButton:hover{background-color:#516395; border-color:#614385;}
