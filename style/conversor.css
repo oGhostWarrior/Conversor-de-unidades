@@ -1,0 +1,112 @@
+html {
+  /*background: radial-gradient(#614385 , #516395);*/
+  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  fill: #9b6527; /* Altera a cor do icone de conversão */
+}
+
+/* Estilo para a div de fundo desfocado */
+.blur-background {
+  /* Definir a imagem de fundo */
+  background-image: url(../img/1732.jpg);         
+  width: 100%;
+  height: 100%;
+  /* Definir a altura e largura para ocupar toda a tela */
+  filter: blur(4px);
+  /* Altere o valor de blur conforme necessário */
+  background-size: cover;
+  background-position: center;
+  position: fixed; /* Para manter a div fixa na tela */
+  z-index: -1; /* Para garantir que a div de fundo esteja atrás do conteúdo */
+}
+
+body { 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #f6a824; opacity: 70%;
+  max-width: 500px;
+  width: 90%;
+  padding: 40px;
+  border-radius: 20px; /* Bordas mais arredondadas */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2f241e;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #413f46;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="number"], select {
+  padding: 10px;
+  border-radius: 10px; /* Bordas mais arredondadas */
+  border: 1px solid #e5e1e3;
+  width: calc(100% - 22px); /* Ajuste para compensar o padding */
+  margin-bottom: 10px;
+  font-size: 16px; font-weight: bold;
+  box-sizing: border-box;
+}
+
+#valorConvertido {
+  background-color: e0b799; opacity: 100%;
+}
+
+.senac-logo {
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.convertButton {
+  text-align: center;
+  margin: 10px auto 0;
+  text-transform: uppercase;
+  color: white;
+  background-color: #633c18;
+  border: 1px solid #633c18;
+  border-radius: 10px; /* Bordas mais arredondadas */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s background ease-in;
+  display: block;
+}
+
+.convertButton:hover {
+  background-color: #516395;
+  border-color: #614385;
+}
+/* Usamos a paleta de cores do filme "The Wolf of Wall Street" :D */
+/* https://loading.io/color/feature/TheWolfofWallStreet/*/
